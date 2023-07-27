@@ -64,12 +64,13 @@ button {
 
 /* Common */
 .section {
-  padding: 75px;
+  padding: 60px;
   text-align: center;
+  margin: auto;
 }
 
 .section__container {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -148,4 +149,53 @@ button {
 
 .home__contact:hover {
   background-color: var(--color-dark-blue);
+}
+
+/* About */
+.about__title {
+  font-size: 36px;
+}
+
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-blue);
+  border: 3px dashed var(--color-dark-grey);
+  border-radius: 100%;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.major__icon:hover i {
+  color: var(--color-dark-pink);
+  transform: scale(1.1) rotate(-30deg);
+}
+
+.about__jobs {
+  text-align: start;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+}
+
+.job__description {
+  margin: 0px 16px;
+}
+
+.job__period,
+.job__title {
+  margin: 3px;
 }
