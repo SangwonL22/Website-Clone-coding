@@ -7,11 +7,54 @@
     <meta name="author" content="이상원의 웹사이트" />
     <meta name="description" content="웹사이트 클론코딩" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <script src="src/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/13cb755b54.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header id="header"></header>
+    <header id="header">
+      <div class="header__logo">
+        <img
+          src="images/favicon.png"
+          alt="header__logo"
+          class="header__logo__img"
+        />
+        <h1 class="header__logo__title">Sangwon</h1>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu__list">
+          <li><a href="#home" class="header__menu__item">Home</a></li>
+          <li><a href="#about" class="header__menu__item">About</a></li>
+          <li><a href="#skills" class="header__menu__item">Skills</a></li>
+          <li><a href="#work" class="header__menu__item">My work</a></li>
+          <li>
+            <a href="#testimonials" class="header__menu__item">Testimonials</a>
+          </li>
+          <li><a href="#contact" class="header__menu__item">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
+      <section id="home">
+        <img src="images/profile.jpg" alt="profile" class="home__avatar" />
+        <h2 class="home__title">
+          Hello,<br />
+          I'm Sangwon LEE
+        </h2>
+        <p class="description">
+          A junior Front-end Engineer currently studying Coding, Korea
+        </p>
+        <button class="home__button">Contact Me</button>
+      </section>
       <section id="about"></section>
       <section id="skills"></section>
       <section id="work"></section>
