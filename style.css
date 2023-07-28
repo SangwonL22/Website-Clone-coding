@@ -130,7 +130,7 @@ button {
   background-color: var(--color-blue);
 }
 
-.navbar__toggle-btn {
+.header__toggle-btn {
   position: absolute;
   top: 21px;
   right: 32px;
@@ -323,6 +323,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -337,6 +344,10 @@ button {
   background-color: var(--color-light-white);
   display: block;
   overflow: hidden;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
@@ -501,12 +512,16 @@ button {
     display: none;
   }
 
+  .header__menu.open {
+    display: block;
+  }
+
   .header__menu__item {
     display: flex;
     justify-content: center;
   }
 
-  .navbar__toggle-btn {
+  .header__toggle-btn {
     display: block;
   }
 

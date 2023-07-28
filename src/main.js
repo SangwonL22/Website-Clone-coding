@@ -24,3 +24,41 @@ document.addEventListener('scroll', () => {
     arrowUp.classList.remove('visible');
   }
 });
+
+const headerMenu = document.querySelector('.header__menu');
+headerMenu.addEventListener('click', () => {
+  headerMenu.classList.toggle('open');
+});
+
+const headerToggleBtn = document.querySelector('.header__toggle-btn');
+headerToggleBtn.addEventListener('click', () => {
+  headerMenu.classList.toggle('open');
+});
+
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+workBtnContainer.addEventListener('click', (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if (filter == null) {
+    return;
+  }
+
+  const active = document.querySelector('.category__button.selected');
+  active.classList.remove('selected');
+  const target =
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected');
+
+  projectContainer.classList.add('anim-out');
+  setTimeout(() => {
+    projects.forEach((project) => {
+      if (filter === '*' || filter === project.dataset.type) {
+        project.classList.remove('invisible');
+      } else {
+        project.classList.add('invisible');
+      }
+    });
+    projectContainer.classList.remove('anim-out');
+  }, 300);
+});
