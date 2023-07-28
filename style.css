@@ -39,6 +39,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -64,7 +68,7 @@ button {
 
 /* Common */
 .section {
-  padding: 60px;
+  padding: 75px;
   text-align: center;
   margin: auto;
 }
@@ -126,7 +130,6 @@ button {
 }
 
 .header__menu__item:hover {
-  border-color: var(--color-white);
   background-color: var(--color-blue);
 }
 
