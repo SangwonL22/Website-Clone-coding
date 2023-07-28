@@ -132,6 +132,7 @@ button {
   height: 250px;
   border: 3px dashed var(--color-white);
   border-radius: 100%;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
 .home__description {
@@ -145,6 +146,7 @@ button {
   border-radius: 4px;
   color: var(--color-white);
   transition: all 150ms ease;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
 .home__contact:hover {
@@ -213,6 +215,7 @@ button {
   display: flex;
   background-color: var(--color-grey);
   color: var(--color-white);
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
 .skillset__left {
@@ -269,6 +272,7 @@ button {
   border-radius: 8px;
   color: var(--color-white);
   background-color: var(--color-blue);
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
 .category__button.selected,
@@ -375,6 +379,7 @@ button {
   width: 150px;
   height: 150px;
   border-radius: 100%;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
 .testimonial__avatar:nth-child(odd) {
@@ -389,6 +394,7 @@ button {
   padding: 18px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
 }
 
 .testimonial__speech-bubble p {
@@ -425,7 +431,7 @@ button {
 }
 
 .contact__links {
-  font-size: 32px;
+  font-size: 38px;
 }
 
 .contact__links i:hover {
