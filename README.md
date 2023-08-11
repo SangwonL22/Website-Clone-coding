@@ -1,6 +1,6 @@
 # Website-Clone-coding
 github URL<br/>
-https://sangwonl22.github.io/Website-Clone-coding<br/>
+https://magnificent-gingersnap-8b5ecd.netlify.app/<br/>
 <div align="center">
  
  # Website clone coding<br/>
